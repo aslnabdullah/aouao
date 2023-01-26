@@ -67,5 +67,53 @@ public class BookSol {
       int rYear = year + rAge;
       System.out.println("It's "+ year+", so you can retire in "+ rYear);
    }
+   //7
+   public void areaOfRectangular(){
+      System.out.println("What is the legth of the room in feet ? ");
+      int len = in.nextInt();
+      System.out.println("What is the width of the room in feet ?");
+      int wid = in.nextInt();
+      int area = len*wid;
+      System.out.println("The area is " + area);
+      double areaS = area * 0.0929;
+      System.out.println(areaS + " square meters");
+   }
+   //8
+      public void pizzaParty(){
+      System.out.println("How many people?");
+      int people = in.nextInt();
+      System.out.println("How many pizzas do you have?");
+      int pizzas = in.nextInt();
+      int pizzaSlice = (pizzas*8);
+      int pizzaForPeople = pizzaSlice/people;
+      int pizzaMore = pizzaSlice % people;
+      System.out.println(people + " people with "+ pizzas + " pizzas");
+      System.out.println("Each person gets "+ pizzaForPeople + " piece of pizza.");
+      System.out.printf("There are " + pizzaMore + " leftover pieces.");
+      
+   }
+   //9
+
+   //10
+   public void selfCheckout(){
+      System.out.println("Enter the price of item 1");
+      int item1 = in.nextInt();
+      System.out.println("Enter the quantity of item 1");
+      int quant1 = in.nextInt();
+      System.out.println("Enter the price of item 2");
+      int item2 = in.nextInt();
+       System.out.println("Enter the quantity of item 2");
+      int quant2 = in.nextInt();
+      System.out.println("Enter the price of item 3");
+      int item3 = in.nextInt();
+       System.out.println("Enter the quantity of item 3");
+      int quant3 = in.nextInt();
+
+      double subtotal = (item1*quant1) + (item2*quant2) + (item3*quant3);
+      double tax =  subtotal*(5.50/100.0); 
+      double total = subtotal + tax;
+      System.out.println("Total : " + total);
+
+   }
 
 }
