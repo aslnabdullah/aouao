@@ -116,4 +116,38 @@ public class BookSol {
 
    }
 
+   //11
+   public void currencyConversion(){
+     System.out.println("How many euros are you exchanging ?");
+     float euro = in.nextFloat();
+     System.out.println("What is the exchange rate ?");
+     float dol = in.nextFloat();
+     float amount = (euro*1.09f)/0.91f;
+     System.out.println(euro + " euros at an exchange rate of " + dol+  " is " + amount + " U.S. dollars.");
+
+   }
+   //12
+   public void computingSimpleInterst(){
+      System.out.println("Enter the principal : ");
+      double m = in.nextDouble();
+      System.out.println("Enter the rate of interest : ");
+      double interest = in.nextDouble();
+      System.out.println("Enter the number of years :");
+      int year = in.nextInt();
+      double invest = (m*((interest/100)*year))+m;
+      System.out.println("After "+ year+" years at " + interest+"%, the invesment will be worth $"+invest);
+   }
+   //13
+   public void determineCompundInterest(){
+      System.out.println("Enter the principal amount : ");
+      double m = in.nextDouble();
+      System.out.println("Enter the rate of interest : ");
+      double interest = in.nextDouble();
+      System.out.println("Enter the number of years :");
+      int year = in.nextInt();
+      System.out.println("What is the number of times the interest is compounded per year ?");
+      int comp = in.nextInt();
+      double a = m*((1+Math.pow(interest/comp, year*comp)));
+      System.out.println("$"+m + " invested at " + interest+"% for " + year + " years compounded "+ comp + " times per year is $"+a);
+   }
 }
